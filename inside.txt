@@ -1,0 +1,23 @@
+https://victorydntmd.tistory.com/29?category=677306
+
+작업 준비
+
+1)프로젝트 생성 및 npm  설치
+$ express -e 예제 및 폴더 명
+$ cd seq-crud-exam
+$ npm install
+$ npm install mysql2 sequelize
+$ npm install -g sequelize-cli
+
+2) sequelize 빌드
+$ sequelize init
+
+3)sync()로 DB연결
+
+4)모델 생성
+$sequelize model:create --name 테이블명 --attributes "컬럼명:value, 컬럼명:value"
+
+5)마이그레이션
+$ sequelize db:migrate
+
+6)npm start
